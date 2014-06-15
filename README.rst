@@ -4,15 +4,12 @@ Framework agnostic, very simple and fast URL-generator for pagination.
 There will be no python package.
 
 .. image:: https://cloud.githubusercontent.com/assets/2255508/3282254/9a63deb6-f4e2-11e3-8c7a-29904a0edf36.png
-    :align: center
-
+    :align: left
 
 .. image:: https://cloud.githubusercontent.com/assets/2255508/3282256/9b0a15b0-f4e2-11e3-80ab-1acea1430d25.png
-    :align: center
-
 
 .. image:: https://cloud.githubusercontent.com/assets/2255508/3282255/9b086e54-f4e2-11e3-9a4f-56af6e0c9f6d.png
-    :align: center
+
 
 Usage
 *****
@@ -61,7 +58,7 @@ Sure enough, you can use it with some tricks.
 API
 ***
 Pagination(initial_path, path, count, per_page, page, window)
-
+::
     initial_path
         The same content with the different URLs is a bad idea.
         / and /?page=1, for example. Initial path is the path without paging.
