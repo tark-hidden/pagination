@@ -7,8 +7,10 @@ There will be no python package.
     :align: left
 
 .. image:: https://cloud.githubusercontent.com/assets/2255508/3282256/9b0a15b0-f4e2-11e3-80ab-1acea1430d25.png
+    :align: left
 
 .. image:: https://cloud.githubusercontent.com/assets/2255508/3282255/9b086e54-f4e2-11e3-9a4f-56af6e0c9f6d.png
+    :align: left
 
 
 Usage
