@@ -5,7 +5,7 @@ There will be no python package.
 
 Usage
 *****
-.. code-block:: python
+.. code:: python
 
     pagination = Pagination(initial_path='/',
                             path='/page-{page}',
@@ -49,32 +49,30 @@ Sure enough, you can use it with some tricks.
 
 API
 ***
-
-
 Pagination(initial_path, path, count, per_page, page, window)
-    :param initial_path
+
+    initial_path
         The same content with the different URLs is a bad idea.
         / and /?page=1, for example. Initial path is the path without paging.
 
-    :param path
+    path
         String with {page}, which will be replaced by page number.
         You can define this with url_for function or request.route_path - it is
         your choice. path='/news/2014/01/06/page-{page}' for example.
 
-    :param count
+    count
         Count of items what you want to show.
 
-    :param per_page
+    per_page
         How many items displayed on one page.
 
-    :param page
+    page
         Current page number (integer)
         Default value: 1
 
-    :param window
+    window
         How many pages will be shown without '...'
         Default value: 10
-
 
 
 Pagination.items()
@@ -86,6 +84,7 @@ Pagination.links()
     Returns a string representing pagination list with Bootstrap CSS framework.
 
     <ul class='pagination'>{{ pagination }}</ul> or
+    
     <div class='pagination'><ul>{{ pagination }}</ul></div> for Bootstrap 2
 
     where `pagination` is Pagination.links() result.
