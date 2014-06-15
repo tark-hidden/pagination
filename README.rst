@@ -52,7 +52,6 @@ API
 
 
 Pagination(initial_path, path, count, per_page, page, window)
-
     :param initial_path
         The same content with the different URLs is a bad idea.
         / and /?page=1, for example. Initial path is the path without paging.
