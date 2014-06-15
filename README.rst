@@ -4,8 +4,7 @@ Framework agnostic, very simple and fast URL-generator for pagination.
 There will be no python package.
 
 Usage
------
-
+*****
 .. code-block:: python
 
     pagination = Pagination(initial_path='/',
@@ -16,19 +15,24 @@ Usage
                             window=10).links()
     return dict(pagination=pagination, ...)
 
+In template you need to write something like
+
 .. code-block:: python
-    In template you need to write something like
 
     {% if pagination %}
         <ul class='pagination'>{{ pagination }}</ul>
     {% endif %}
 
+
+
 What about AJAX?
-----------------
+****************
 
 Sure enough, you can use it with some tricks.
 
+
 .. code-block:: javascript
+
     $(document).on('click', '.pagination a', function(e) {
         e.preventDefault();
         e.stopPropagation();
@@ -41,8 +45,11 @@ Sure enough, you can use it with some tricks.
         return false;
     });
 
+
+
 API
----
+***
+
 
 Pagination(initial_path, path, count, per_page, page, window)
 
@@ -70,9 +77,11 @@ Pagination(initial_path, path, count, per_page, page, window)
         Default value: 10
 
 
+
 Pagination.items()
     Returns a list of set with (url, page). With loop you can use it with any
     CSS framework or without it.
+
 
 Pagination.links()
     Returns a string representing pagination list with Bootstrap CSS framework.
