@@ -16,9 +16,9 @@ Usage
                             window=10).links()
     return dict(pagination=pagination, ...)
 
-.. code:: python
+In template you need to write something like
 
-    In template you need to write something like
+.. code:: python
 
     {% if pagination %}
         <ul class='pagination'>{{ pagination }}</ul>
