@@ -51,6 +51,6 @@ class Pagination(object):
                 items.append("<li class='disabled'><a href='#'>...</li>")
                 continue
             items.append("<li%s><a href='%s'>%d</a></li>" % (
-                ' class="active"' if page == p else '', url, page))
+                " class='active'" if page == p else '', url, page))
 
         return Markup(''.join(items))
