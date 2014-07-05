@@ -6,7 +6,7 @@ There will be no python package.
 Usage
 -----
 
-.. code-block:: python
+.. code:: python
 
     pagination = Pagination(initial_path='/',
                             path='/page-{page}',
@@ -16,7 +16,8 @@ Usage
                             window=10).links()
     return dict(pagination=pagination, ...)
 
-.. code-block:: python
+.. code:: python
+
     In template you need to write something like
 
     {% if pagination %}
@@ -28,7 +29,8 @@ What about AJAX?
 
 Sure enough, you can use it with some tricks.
 
-.. code-block:: javascript
+.. code:: javascript
+
     $(document).on('click', '.pagination a', function(e) {
         e.preventDefault();
         e.stopPropagation();
@@ -40,6 +42,7 @@ Sure enough, you can use it with some tricks.
 
         return false;
     });
+
 
 API
 ---
