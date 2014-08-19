@@ -3,6 +3,14 @@ Pagination
 Framework agnostic, very simple and fast URL-generator for pagination.
 There will be no python package.
 
+
+.. figure:: https://cloud.githubusercontent.com/assets/2255508/3282254/9a63deb6-f4e2-11e3-8c7a-29904a0edf36.png
+
+.. figure:: https://cloud.githubusercontent.com/assets/2255508/3282256/9b0a15b0-f4e2-11e3-80ab-1acea1430d25.png
+
+.. figure:: https://cloud.githubusercontent.com/assets/2255508/3282255/9b086e54-f4e2-11e3-9a4f-56af6e0c9f6d.png
+
+
 Usage
 -----
 
