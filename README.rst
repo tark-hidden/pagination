@@ -63,13 +63,13 @@ API
 
 - ``param path`` String with {page}, which will be replaced by page number. You can define this with url_for function or request.route_path - it is your choice. path='/news/2014/01/06/page-{page}' for example.
 
-- ``param count`` Count of items what you want to show.
+- ``count`` Count of items you want to show.
 
-- ``param per_page`` How many items displayed on one page.
+- ``per_page`` How many items displayed on one page.
 
-- ``param page`` Current page number (integer). Default value: 1
+- ``page`` Current page number (integer). Default value: 1
 
-- ``param window`` How many pages will be shown without '...'. Default value: 10
+- ``window`` How many pages will be shown without '...'. Default value: 10
 
 .. code:: python
 
